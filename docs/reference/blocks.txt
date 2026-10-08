@@ -1,0 +1,793 @@
+Skip to content
+DDC wireframe starter v1.0.2
+Showcase
+Blocks
+Guide
+Design system
+template chrome, not part of a client site
+
+BLOCK LIBRARY
+
+Every block, every variant
+
+Grouped by family. Each one is a component in src/components/; the showcase on the home page uses one variant of each. New blocks are built the same way (see the block contract) and land here.
+
+Chrome
+Heroes
+Proof
+Features and cards
+Text and image
+Process
+Pricing
+FAQ
+Call to action
+Listing
+People and gallery
+Data table
+Article
+Lead capture
+
+BLOCK 01 · CHROME
+
+Chrome
+Header · default
+site/Header.tsx · site/Footer.tsx
+
+On every page. Header: logo and CTA on the container edges, dropdowns, mobile menu. Footer: 4 → 2 → 1 columns, contact block, legal row.
+
+Brand
+Services
+Work
+Industries
+About
+Resources
+Pricing
+Book a call
+
+BLOCK 02 · CHROME
+
+Chrome
+Footer
+site/Header.tsx · site/Footer.tsx
+
+On every page. Header: logo and CTA on the container edges, dropdowns, mobile menu. Footer: 4 → 2 → 1 columns, contact block, legal row.
+
+Brand
+
+One sentence on what the company does and where it is.
+
+(000) 000-0000
+
+hello@example.com
+Street address
+City, ST 00000
+
+SERVICES
+Service one
+Service two
+Service three
+Service four
+COMPANY
+About
+Team
+Careers
+Contact
+RESOURCES
+Blog
+Case studies
+FAQ
+Support
+
+© 2026 Company Name. All rights reserved.
+
+Privacy
+Terms
+Powered by Design in DC
+
+BLOCK 03 · HEROES
+
+Heroes
+tone=dark · display · fill · media=video
+site/Hero.tsx · site/HeroForm.tsx
+
+One per page. Hero for standing pages and home (dark, display type); HeroForm when the page's job is the form.
+
+EYEBROW LINE
+
+Headline that says what you do and for whom
+
+Two sentences at most. The first states the outcome the visitor gets. The second removes the biggest doubt they arrive with.
+
+Primary
+Secondary
+
+Trust line: 4.9 rating · 200+ clients · Since 1998
+
+BLOCK 04 · HEROES
+
+Heroes
+tone=light · media=photo · breadcrumb
+site/Hero.tsx · site/HeroForm.tsx
+
+One per page. Hero for standing pages and home (dark, display type); HeroForm when the page's job is the form.
+
+Home
+Section
+Page
+
+STANDING PAGE
+
+Headline for a standing page
+
+Two sentences at most. The first states the outcome the visitor gets. The second removes the biggest doubt they arrive with.
+
+Primary
+Secondary
+
+Trust line: 4.9 rating · 200+ clients · Since 1998
+
+BLOCK 05 · HEROES
+
+Heroes
+media=render
+site/Hero.tsx · site/HeroForm.tsx
+
+One per page. Hero for standing pages and home (dark, display type); HeroForm when the page's job is the form.
+
+PRODUCT
+
+Rotary airlock valves
+
+The render keeps its proportions on a surface plate.
+
+Request a quote
+
+BLOCK 06 · HEROES
+
+Heroes
+media=none
+site/Hero.tsx · site/HeroForm.tsx
+
+One per page. Hero for standing pages and home (dark, display type); HeroForm when the page's job is the form.
+
+UTILITY PAGE
+
+Headline with no media, kept to a reading width
+
+Privacy, careers, thank-you.
+
+Secondary
+
+BLOCK 07 · HEROES
+
+Heroes
+HeroForm
+site/Hero.tsx · site/HeroForm.tsx
+
+One per page. Hero for standing pages and home (dark, display type); HeroForm when the page's job is the form.
+
+CONTACT
+
+Tell us what you need
+
+Three promises, each one short: who reads it, how fast they reply, what you get back.
+
+Promises, contact rows or steps sit here on laptop.
+
+Start the conversation
+Website
+Name*
+Company
+Email*
+Phone
+
+Optional. If you would rather talk.
+
+What is this about?
+Choose one
+A quote
+Support
+Something else
+Tell us about it*
+You may contact me about this request.
+Send message
+
+No newsletter, no sharing your details.
+
+BLOCK 08 · PROOF
+
+Proof
+LogoStrip
+blocks/LogoStrip.tsx · blocks/Stats.tsx · blocks/Testimonial.tsx
+
+Social proof near decisions: logos under a hero, numbers beside a claim, one quote before pricing.
+
+Trusted by teams at
+
+BLOCK 09 · PROOF
+
+Proof
+Stats · tone=dark
+blocks/LogoStrip.tsx · blocks/Stats.tsx · blocks/Testimonial.tsx
+
+Social proof near decisions: logos under a hero, numbers beside a claim, one quote before pricing.
+
+3x
+A number and what it means in one line
+90+
+A number and what it means in one line
+21
+A number and what it means in one line
+24h
+A number and what it means in one line
+
+BLOCK 10 · PROOF
+
+Proof
+Stats · tone=surface
+blocks/LogoStrip.tsx · blocks/Stats.tsx · blocks/Testimonial.tsx
+
+Social proof near decisions: logos under a hero, numbers beside a claim, one quote before pricing.
+
+3x
+A number and what it means in one line
+90+
+A number and what it means in one line
+21
+A number and what it means in one line
+24h
+A number and what it means in one line
+
+BLOCK 11 · PROOF
+
+Proof
+Testimonial · with result
+blocks/LogoStrip.tsx · blocks/Stats.tsx · blocks/Testimonial.tsx
+
+Social proof near decisions: logos under a hero, numbers beside a claim, one quote before pricing.
+
+“A real sentence from a real client, no longer than three lines on a laptop. It names the result, not the feeling.”
+
+Name Surname
+Title, Company
+
+RESULT
+
++140%
+
+What the number measures, over what period.
+
+Read the case study
+
+BLOCK 12 · PROOF
+
+Proof
+Testimonial · quote only · tone=dark
+blocks/LogoStrip.tsx · blocks/Stats.tsx · blocks/Testimonial.tsx
+
+Social proof near decisions: logos under a hero, numbers beside a claim, one quote before pricing.
+
+“A real sentence from a real client, no longer than three lines on a laptop. It names the result, not the feeling.”
+
+Name Surname
+Title, Company
+
+BLOCK 13 · FEATURES AND CARDS
+
+Features and cards
+Features · 3 columns
+blocks/Features.tsx · blocks/CardGrid.tsx
+
+Lists of things. Features for benefits without their own page; CardGrid for things that have one.
+
+WHAT WE DO
+
+Section heading, one line if possible
+
+Optional intro. Keep it to two lines on a laptop. Say why these three things matter together.
+
+1
+Feature one
+
+Two lines that explain the benefit, not the mechanism. End with the outcome.
+
+Learn more
+
+2
+Feature two
+
+Two lines that explain the benefit, not the mechanism. End with the outcome.
+
+Learn more
+
+3
+Feature three
+
+Two lines that explain the benefit, not the mechanism. End with the outcome.
+
+Learn more
+
+BLOCK 14 · FEATURES AND CARDS
+
+Features and cards
+Features · 4 columns · tone=white
+blocks/Features.tsx · blocks/CardGrid.tsx
+
+Lists of things. Features for benefits without their own page; CardGrid for things that have one.
+
+Four across on laptop
+1
+Feature one
+
+Two lines that explain the benefit, not the mechanism. End with the outcome.
+
+Learn more
+
+2
+Feature two
+
+Two lines that explain the benefit, not the mechanism. End with the outcome.
+
+Learn more
+
+3
+Feature three
+
+Two lines that explain the benefit, not the mechanism. End with the outcome.
+
+Learn more
+
+4
+Feature four
+
+Two lines that explain the benefit, not the mechanism.
+
+BLOCK 15 · FEATURES AND CARDS
+
+Features and cards
+CardGrid · 3 columns · view all
+blocks/Features.tsx · blocks/CardGrid.tsx
+
+Lists of things. Features for benefits without their own page; CardGrid for things that have one.
+
+SERVICES
+
+Cards with an image
+View all
+
+Category
+
+Card title
+
+One or two lines of supporting text, cut at about 120 characters.
+
+Category
+
+Card title
+
+One or two lines of supporting text, cut at about 120 characters.
+
+Category
+
+Card title
+
+One or two lines of supporting text, cut at about 120 characters.
+
+BLOCK 16 · FEATURES AND CARDS
+
+Features and cards
+CardGrid · compact · 2 → 2 → 4
+blocks/Features.tsx · blocks/CardGrid.tsx
+
+Lists of things. Features for benefits without their own page; CardGrid for things that have one.
+
+Compact cards
+
+Category
+
+Card title
+
+Category
+
+Card title
+
+Category
+
+Card title
+
+Category
+
+Card title
+
+BLOCK 17 · TEXT AND IMAGE
+
+Text and image
+image right · points · action
+blocks/TextImage.tsx
+
+One argument per block, alternating sides. Three or four in a row.
+
+WHY IT MATTERS
+
+Heading for this argument
+
+A short paragraph. Three or four sentences. Then a list of the things the reader gets, each one short enough to scan.
+
+Point one
+One line of support.
+Point two
+One line of support.
+Point three
+One line of support.
+Action
+
+BLOCK 18 · TEXT AND IMAGE
+
+Text and image
+image left · tone=surface
+blocks/TextImage.tsx
+
+One argument per block, alternating sides. Three or four in a row.
+
+SECOND ARGUMENT
+
+Image on the left on laptop, on top on phone
+
+On phone and tablet the image always comes first, then the text, regardless of which side it sits on laptop. That keeps the reading order predictable.
+
+Secondary
+
+BLOCK 19 · PROCESS
+
+Process
+4 steps
+blocks/Process.tsx
+
+How it works, always numbered, three to five steps.
+
+HOW IT WORKS
+
+Four steps, always numbered
+
+What happens and how long it takes, in one line each.
+
+Step name
+
+What happens and how long it takes.
+
+Step name
+
+What happens and how long it takes.
+
+Step name
+
+What happens and how long it takes.
+
+Step name
+
+What happens and how long it takes.
+
+BLOCK 20 · PROCESS
+
+Process
+3 steps · tone=white
+blocks/Process.tsx
+
+How it works, always numbered, three to five steps.
+
+Three steps
+Step name
+
+What happens and how long it takes.
+
+Step name
+
+What happens and how long it takes.
+
+Step name
+
+What happens and how long it takes.
+
+BLOCK 21 · PRICING
+
+Pricing
+blocks/Pricing.tsx
+
+Two to four tiers, one recommended.
+
+PRICING
+
+Three tiers, one recommended
+
+One line on what is included in every tier.
+
+Starter
+
+$499/mo
+
+Who it is for, in one line.
+
+Included thing
+Included thing
+Included thing
+Choose Starter
+Recommended
+
+Plus
+
+$1,000/mo
+
+Who it is for, in one line.
+
+Everything in Starter
+Included thing
+Included thing
+Included thing
+Choose Plus
+Pro
+
+$1,800/mo
+
+Who it is for, in one line.
+
+Everything in Plus
+Included thing
+Included thing
+Choose Pro
+
+BLOCK 22 · FAQ
+
+FAQ
+with aside
+blocks/Faq.tsx
+
+Questions as customers type them; emits FAQPage schema. With or without an aside.
+
+FAQ
+
+Questions people ask before they buy
+A question phrased exactly the way a customer would type it?
+
+A direct answer in the first sentence. Then one or two sentences of context. Nothing that needs a scroll.
+
+Another question?
+A third question?
+A fourth question?
+Aside card
+
+Sits beside the block on laptop, under it on phone.
+
+Action
+
+BLOCK 23 · FAQ
+
+FAQ
+full width · tone=white
+blocks/Faq.tsx
+
+Questions as customers type them; emits FAQPage schema. With or without an aside.
+
+FAQ
+
+Full width
+A question phrased exactly the way a customer would type it?
+
+A direct answer in the first sentence. Then one or two sentences of context. Nothing that needs a scroll.
+
+Another question?
+A third question?
+A fourth question?
+
+BLOCK 24 · CALL TO ACTION
+
+Call to action
+tone=accent
+blocks/CtaBand.tsx
+
+One sentence, one action. Never two in a row.
+
+One sentence that restates the offer
+
+One line that removes the last objection: no commitment, quick reply, real person.
+
+Primary action
+Secondary
+
+BLOCK 25 · CALL TO ACTION
+
+Call to action
+tone=dark
+blocks/CtaBand.tsx
+
+One sentence, one action. Never two in a row.
+
+One sentence that restates the offer
+Primary action
+
+BLOCK 26 · CALL TO ACTION
+
+Call to action
+tone=surface
+blocks/CtaBand.tsx
+
+One sentence, one action. Never two in a row.
+
+One sentence that restates the offer
+
+One line that removes the last objection: no commitment, quick reply, real person.
+
+Primary action
+Secondary
+
+BLOCK 27 · LISTING
+
+Listing
+with pagination
+blocks/Listing.tsx
+
+Index pages: articles, resources, events. Pagination when needed.
+
+BLOG
+
+List layout for articles, resources, events
+
+12 Sep 2026 · Category
+
+Article title that can run to two lines on phone
+
+Summary cut at about 160 characters so the list stays scannable.
+
+12 Sep 2026 · Category
+
+Article title that can run to two lines on phone
+
+Summary cut at about 160 characters so the list stays scannable.
+
+12 Sep 2026 · Category
+
+Article title that can run to two lines on phone
+
+Summary cut at about 160 characters so the list stays scannable.
+
+‹
+1
+2
+3
+›
+
+BLOCK 28 · PEOPLE AND GALLERY
+
+People and gallery
+Team
+blocks/Team.tsx · blocks/Gallery.tsx
+
+Compact items, two across even on phone.
+
+TEAM
+
+People grid
+Name Surname
+
+Role
+
+Name Surname
+
+Role
+
+Name Surname
+
+Role
+
+Name Surname
+
+Role
+
+BLOCK 29 · PEOPLE AND GALLERY
+
+People and gallery
+Gallery
+blocks/Team.tsx · blocks/Gallery.tsx
+
+Compact items, two across even on phone.
+
+GALLERY
+
+Image grid
+
+BLOCK 30 · DATA TABLE
+
+Data table
+blocks/DataTable.tsx
+
+Specifications and comparisons; scrolls sideways on phone inside its card.
+
+SPECIFICATIONS
+
+A wide table
+Square inlet
+MODEL	SIZE	CAPACITY	WEIGHT	MATERIAL	LEAD TIME
+Model A	6 × 6	0.07	45 kg	Cast iron	2 weeks
+Model B	8 × 8	0.18	72 kg	Cast iron	2 weeks
+Model C	10 × 10	0.36	110 kg	Stainless	4 weeks
+Model D	12 × 12	0.64	160 kg	Stainless	4 weeks
+
+BLOCK 31 · ARTICLE
+
+Article
+with sticky aside
+blocks/Article.tsx
+
+Long-form reading at 72 characters with a sticky aside.
+
+ARTICLE
+
+Long-form reading layout
+
+Lead paragraph, one size up from body. It summarises the article in two sentences.
+
+Body text at 17px on a 72-character measure. Line length is what makes long text readable; width alone does not. This column never grows past 72ch even on a wide screen.
+
+Subheading inside the article
+
+Another paragraph. Lists inside prose keep their bullets, unlike lists elsewhere on the site.
+
+A point in a list
+Another point
+A third one
+Callout. A note the reader must not miss.
+
+A paragraph with an inline link in it.
+
+Aside card
+
+Sits beside the block on laptop, under it on phone.
+
+Action
+
+BLOCK 32 · LEAD CAPTURE
+
+Lead capture
+LeadSection · tone=dark
+blocks/LeadSection.tsx · blocks/LeadForm.tsx
+
+The conversion block. One per page that earns traffic.
+
+GET IN TOUCH
+
+Tell us what you need
+
+Three promises, each one short: who reads it, how fast they reply, what you get back.
+
+✓
+Reply within one business day
+From a named person, not a queue.
+☎
+(000) 000-0000
+Mon to Fri, 8am to 5pm
+@
+hello@example.com
+For anything that is not urgent.
+Start the conversation
+
+Required fields are marked. The rest helps us reply faster.
+
+Website
+Name*
+Company
+Email*
+Phone
+
+Optional. If you would rather talk.
+
+What is this about?
+Choose one
+A quote
+Support
+Something else
+Tell us about it*
+You may contact me about this request.
+Send message
+
+No newsletter, no sharing your details.
+
+DDC wireframe starter v1.0.2 · /srv/studio/templates/wireframe-starter · rules in skills/wireframe-blocks/SKILL.md · history in CHANGELOG.md

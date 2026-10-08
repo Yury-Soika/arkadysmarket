@@ -1,0 +1,288 @@
+Skip to content
+DDC wireframe starter v1.0.2
+Showcase
+Blocks
+Guide
+Design system
+template chrome, not part of a client site
+
+DDC WIREFRAME STARTER · V0.3 · STEP 3 OF 5
+
+Tokens and layout, measured live
+
+Resize the window: the badge bottom-right reports the state, container and margin. Everything on this page is driven by the tokens in globals.css; nothing carries its own numbers.
+
+STATES
+
+Six states, three designed
+STATE	TIER	RANGE	CHECKED ON
+Small phone	supporting	0 to 379	iPhone SE · 375 × 553 viewport
+Phone	core	380 to 639	iPhone 14 · 390 × 664 viewport
+Tablet	core	640 to 1023	iPad Air 11" · 820 × 1080 viewport
+Laptop	core	1024 to 1535	MacBook Air 13" · 1440 × 788 viewport · default
+Desktop	supporting	1536 to 1649	15.6" Windows laptop · 1536 × 738 viewport
+Extra wide	supporting	1650 and up	MacBook Pro 16" · 1728 × 1005 viewport
+
+TOKENS
+
+Colour
+
+Mid-fi greys plus one accent. Hi-fi changes these values; components never reference a hex directly.
+
+Ink
+
+--ink
+
+Ink 2
+
+--ink-2
+
+Muted
+
+--muted
+
+Line
+
+--line
+
+Line strong
+
+--line-strong
+
+Surface
+
+--surface
+
+Surface 2
+
+--surface-2
+
+Accent
+
+--accent
+
+Accent tint
+
+--accent-tint
+
+Dark
+
+--dark
+
+Success
+
+--success
+
+Error
+
+--error
+
+TOKENS
+
+Type scale
+
+Plain CSS classes, so a size can never silently fail. Laptop · tablet · phone values in the notes.
+
+Display · 64 · 52 · 40
+
+home hero only
+
+Heading 1 · 60 · 48 · 38
+
+one per page
+
+Heading 2 · 40 · 34 · 30
+
+section headings
+
+Heading 3 · 24 · 22 · 22
+
+cards, sub-sections
+
+Heading 4 · 18
+
+labels, list titles
+
+Lead · 21 · 19 · 19. The intro under a heading, never longer than two lines on a laptop.
+
+Body · 17 everywhere. Line length is what makes long text readable, so prose stops at 72 characters.
+
+Small · 14 · meta, captions, dates
+
+EYEBROW · 13 UPPERCASE
+
+TOKENS
+
+Spacing scale and rhythm
+
+Every margin, padding and gap is one of these eleven values. Sections own their padding (80 · 64 · 56; hero 96 · 64 · 48). Inside a section: eyebrow → 12 → heading → 16 → lead → 40 → content → 32 → action.
+
+8
+12
+16
+24
+32
+40
+48
+56
+64
+80
+96
+
+LAYOUT
+
+Container, gutters and grids
+
+Container 1240 (1440 from 1650), centred, everything on its two edges. Gutter 16 · 20 · 32 · 40 · 48. Grids 1 → 2 at 640 → 3 or 4 at 1024; compact items 2 across on phone.
+
+LAYOUT
+
+Full-bleed band
+
+The background runs edge to edge; the content stays inside the container. The only kind of element allowed to leave the container.
+
+ACCESSIBILITY, IN THE BASE
+
+Built into every project
+Skip link: press Tab once on any page.
+One visible focus style for everything keyboard-reachable (:focus-visible), never removed.
+prefers-reduced-motion switches off animation and smooth scrolling.
+Body 17px, small text never below 14px, tap targets 44px on phone (arrives with the components in step 2).
+
+Try the focus ring on this link
+
+COMPONENTS
+
+Every control, every state
+
+These are the parts every block is made of. Which states exist is fixed on every project; how they look is the hi-fi's call, through the tokens.
+
+Buttons
+
+Variants and sizes are props on one Button. Tab through them: the disabled one is skipped, the loading one is busy.
+
+Primary
+Secondary
+Outline
+Light
+Outline light
+Small
+Medium
+Large
+Disabled
+Loading
+Loading
+As a link
+External ↗
+Block, for phone layouts and form submits
+Links
+Standalone link
+With arrow
+
+Inside a paragraph the link is underlined so it reads as one, and an external link
+(opens in a new tab)
+ opens in a new tab and says so to screen readers.
+
+Fields
+
+Default, filled, disabled, error and valid. Errors sit under the field and are announced.
+
+Default
+Filled
+Disabled
+With hint
+
+Helps us prepare for the call.
+
+Error*
+
+⚠
+That email address does not look right.
+
+Valid*
+The form pattern
+
+Submit it empty to see validation; fill it in to see the busy button and the success state.
+
+Name*
+Email*
+Company
+
+Optional, helps us prepare.
+
+What is this about?*
+Choose one
+A quote
+Support
+Something else
+Message
+You may contact me about this request.
+Send message
+
+No newsletter, no sharing your details.
+
+Cards
+
+A card is a surface; a link card is one link with a hover lift and a single keyboard stop.
+
+Category · 12 Sep 2026
+
+Link card
+
+One or two lines of supporting text, cut at about 120 characters so the grid stays even.
+
+Contain
+
+Render on a plate
+Plain card
+Anything inside
+
+Padding comes from the content so an image can bleed to the edge.
+
+Learn more
+
+Meta line
+
+Compact One
+
+Meta line
+
+Compact Two
+
+Meta line
+
+Compact Three
+
+Meta line
+
+Compact Four
+Section heading
+
+Heading + intro, once. Left with an action, or centred.
+
+EYEBROW
+
+Left aligned, with an action
+
+One or two lines of intro under the heading, never more on a laptop.
+
+View all
+
+EYEBROW
+
+Centred
+
+Used for process steps, pricing and CTA bands.
+
+Small parts
+Default pill
+Accent
+Dark
+Home
+Section
+Current page
+viewport 1440 · Laptop (core)
+container 1240 · margin 100 each side
+gutter 40px · header 72px · section 80px
+show container lines
+DDC wireframe starter v1.0.2 · /srv/studio/templates/wireframe-starter · rules in skills/wireframe-blocks/SKILL.md · history in CHANGELOG.md
