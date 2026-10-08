@@ -10,5 +10,7 @@ Checked 2026-10-08 against the production static export built with `/arkadysmark
 - Call, email, Facebook, and directions links use the business details documented in `SOURCES.md`.
 - Desktop and mobile screenshots were reviewed.
 - The hub build script successfully exported and copied the landing into `public/arkadysmarket/`.
+- Published at https://demo.plexrs.com/arkadysmarket/. HTTP checks passed for the page, hub card, thumbnail, sitemap entry, and 12 linked landing assets.
+- The published browser check passed for navigation from the hub, English/Russian controls, mobile menu, and hydration.
 
 Opening hours differ between public directories and still require owner confirmation before a production launch.

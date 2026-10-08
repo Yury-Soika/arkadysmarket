@@ -2,6 +2,8 @@
 
 English/Russian landing page for the Eastern European deli and grocery in Plymouth, Minnesota. Built with Next.js, Tailwind CSS, and TypeScript.
 
+Published preview: https://demo.plexrs.com/arkadysmarket/. The Plex demo hub includes a project card, thumbnail, route rewrite, and sitemap entry. Its `build:landings -- arkadysmarket` command rebuilds and syncs this project from `plex/arkadysmarket`.
+
 ## Development
 
 ```sh
