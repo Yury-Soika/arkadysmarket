@@ -12,7 +12,6 @@ Checked 2026-10-08.
   - European groceries, deli, imported sweets and drinks.
 - https://www.yellowpages.com/plymouth-mn/mip/arkadys-market-3154129
   - Lists 9am–9pm instead. The demo uses the more conservative 10am opening time. Owner confirmation remains outstanding.
-- Layout reference: https://starter.designinx.com/guide/ and https://starter.designinx.com/design-system/
-  - Public starter v1.0.2. Architecture/layout principles adapted; no copied proprietary component implementation. Public compiled files are archived for reference separately, not shipped in this site.
+- Design and development guidance: the PlexRS company standard in `docs/DESIGN_STANDARD.md`.
 
 Original filenames and photo URLs: `asset-sources.json`. This project is a prospect demo, not evidence of a commissioned or owner-approved production site.

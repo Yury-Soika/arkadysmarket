@@ -1,8 +1,14 @@
-# Plex website design standard
+# PlexRS website design and development standard
 
-Default for new Plex websites unless the user or an established project specifies another design system. Adapt brand colors, imagery, and composition to each business; the shared pattern is layout and component architecture, not identical-looking sites.
+The PlexRS company standard for new websites and landing pages unless the user or an established project specifies another design system. Adapt brand colors, imagery, and composition to each business; the shared pattern is layout and component architecture, not identical-looking sites.
 
-Based on the public DesignInX / Design in DC wireframe starter **v1.0.2**, downloaded 2026-10-08. Read the archived [guide](reference/guide.txt), [design system](reference/design-system.txt), and [block library](reference/blocks.txt) when their details are needed. Sources: https://starter.designinx.com/guide/ and https://starter.designinx.com/design-system/.
+## Technology stack
+
+Start with **Next.js, TypeScript, and Tailwind CSS**. Use the Next.js App Router for routes and metadata, TypeScript for application code and data contracts, and Tailwind CSS with shared design tokens for styling. Build the prototype in the same production stack and codebase that will be delivered.
+
+**Payload CMS and PostgreSQL are optional additions, discussed and agreed with the client later.** Confirm content editing needs, data requirements, hosting, maintenance, and scope before adding them. When agreed, Payload provides the CMS and PostgreSQL stores the application/CMS data. Keep components and content models ready for that integration without making a database or CMS a requirement for the initial website.
+
+Client choices and an established project's design system take precedence over these defaults.
 
 ## Layout contract
 
@@ -30,20 +36,15 @@ Based on the public DesignInX / Design in DC wireframe starter **v1.0.2**, downl
 
 ## Architecture contract
 
-- Use the real production stack from the first build; the standard supports the usual Next.js + Tailwind + TypeScript workflow without requiring a CMS.
+- Use Next.js, TypeScript, and Tailwind CSS from the first build. Introduce Payload CMS and PostgreSQL only after the client agrees to their purpose and scope.
 - Routes own URL and metadata and stay thin. Templates compose blocks. Components own structure. Content files own business copy, links, and image paths. One component per structure; variants as props.
 - Name the custom container `.site-container` or another project-specific class. Tailwind’s generated `.container` utility can override a component-layer `.container` and silently remove the intended gutters.
 - Put colors, spacing, radii, and typography in shared tokens. Tailwind uses semantic aliases; do not scatter arbitrary colors or dimensions through components. Element rules belong in `@layer base` so utilities can override them.
-- Use source HTML/CSS as reference; do not ship the captured markup or stylesheet as the implementation. Downloaded files are a local reference archive, not a licensed upstream component source package.
-- Preserve approved client copy and links when provided. When writing new copy, separate verified facts from editorial wording and track sources. Never copy the starter's invented logos, metrics, testimonials, placeholder claims, or promises into a business site.
+- Preserve approved client copy and links when provided. When writing new copy, separate verified facts from editorial wording and track sources. Do not invent logos, metrics, testimonials, business claims, or promises.
 - Compose only useful blocks. A grocery page usually needs store information, authentic imagery, products/categories, and call/directions actions; do not force B2B pricing, forms, process steps, or testimonials into it.
 - Add forms only with an actual requested submission path. Do not fake successful submissions. Add CMS only when requested, onto existing approved components and data shapes.
-- Keep reference-site documentation chrome and debug controls out of customer pages. A content review/debug mode is optional authoring tooling, not a customer-facing feature.
+- Keep internal documentation and debug controls out of customer pages. A content review/debug mode is optional authoring tooling, not a customer-facing feature.
 
 ## Validation contract
 
 Check 375, 390, 820, 1440, 1536, and 1728px on the production build/export. Measure the container, gutters, header, logo, and type, not just the screenshot. Verify no horizontal overflow, broken images, console errors, or missing assets. Exercise navigation, phone/email/map links, language switching, and forms if present. Check keyboard access, visible focus, 44px minimum interactive targets, reduced motion, and text enlargement. Resolve sources' conflicting business hours before presenting them as owner-approved.
-
-## Archive
-
-The workspace archive at `docs/designinx/reference/` contains the showcase, blocks, guide, and design-system HTML, rendered text, linked compiled CSS/JavaScript/font assets, and a provenance manifest. It does not contain the private upstream `/srv/studio/templates/wireframe-starter` repository or its internal skill. Preserve the archive locally; do not upload it to client repositories or the public demo bundle.

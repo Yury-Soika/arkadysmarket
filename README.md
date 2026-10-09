@@ -31,6 +31,6 @@ Copy the contents of `out/` into the hub’s `public/arkadysmarket/`. The hub re
 
 Business copy and EN/RU translations live in `app/content/home.ts`; contact details and links live in `app/lib/business.ts`. Routes are thin, templates compose blocks, and components use shared tokens in `app/globals.css`.
 
-Layout follows the public DesignInX starter v1.0.2 guide: 1240px container, 1440px above 1650; 640/1024 layout breakpoints; shared gutters; 80/64/56 section spacing; 17px body; 14px secondary text; reusable components.
+Layout follows the PlexRS company standard: 1240px container, 1440px above 1650; 640/1024 layout breakpoints; shared gutters; 80/64/56 section spacing; 17px body; 14px secondary text; reusable components.
 
 Facts, photos, and the email come from the supplied Facebook page. Opening hours come from public directory listings, which differ on opening time; confirm them with the owner before a production launch. No invented prices, delivery service, testimonials, review scores, or online checkout. The logo was supplied by the user. Sources and asset provenance are in `docs/`.
